@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import chair from '../../../images/chair.png'
 
 const HeaderMain = () => {
@@ -8,7 +9,7 @@ const HeaderMain = () => {
                 <div className="col-md-4 offset-md-1">
                     <h1 style={{color: '#3A4256'}}>Your New Smile <br/> Starts Here</h1>
                     <p className="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta officiis sit inventore incidunt. Deleniti, quia.</p>
-                    <button className="btn btn-primary">GET APPOINTMENT</button>
+                    <Link to="/appointment" className="btn btn-primary">GET APPOINTMENT</Link>
                 </div>
                 <div className="col-md-6">
                     <img src={chair} alt="" className="img-fluid"/>
